@@ -17,3 +17,18 @@
     }
   }
   
+
+  .floating-left-right-image {
+    display: inline-block;
+    animation: float-right-left 3s ease-in-out infinite;
+  }
+  
+  @keyframes float-right-left {
+    0%, 100% {
+      transform: translateX(0); /* Initial position */
+    }
+    50% {
+      transform: translateX(0.5in); /* Moves right by 0.5 inches */
+    }
+  }
+  

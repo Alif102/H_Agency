@@ -3,6 +3,9 @@ import { FaChevronDown, FaBars, FaTimes, FaRegUser } from "react-icons/fa";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { RxCross1 } from "react-icons/rx";
 import bb from '../src/assets/bb.png'
+import bg from '../src/assets/bg-1.png'
+import { TiTick } from "react-icons/ti";
+import { IoCheckmark } from "react-icons/io5";
 const App = () => {
   const [scrolled, setScrolled] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -39,10 +42,10 @@ const App = () => {
 <div>
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          scrolled ? "bg-white shadow-lg" : "bg-[#dffcf0]"
-        }`}
-      >
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+    scrolled ? "bg-white shadow-lg" : "bg-[#dffcf0]"
+  }`}
+>
         <div className="container mx-auto flex justify-between items-center px-4 py-3">
           {/* Logo */}
           <div className="text-black font-bold text-xl">
@@ -274,17 +277,33 @@ const App = () => {
      
     </div>
 
-    <div className=" flex w-full px-10 mb-52 mx-auto flex-col md:flex-row justify-evenly bg-[#dffcf0] mt-[75px] items-center">
-      <div >
-     <h1 className=" md:text-6xl font-bold text-2xl   "> We’r Help <br/>
+    <div   style={{
+    backgroundImage: `url('../src/assets/bg-1.png')`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+  }} className=" flex w-full px-10  mx-auto flex-col relative md:flex-row justify-evenly bg-[#dffcf0] mt-[75px] lg:pb-0 md:pb-10  items-center">
+      <div  className=" text-center md:text-start">
+     <h1 className=" md:text-6xl font-bold text-2xl mt-7 md:mt-0   "> We’r Help <br/>
      to Achive your Success.</h1>
 
-      <h1 className=" text-gray-500 md:text-2xl  font-sans my-9 text-xl">
+      <h1 className=" text-gray-500 md:text-2xl my-10  font-sans   text-xl">
       Agency work with top rated talented people provide qulaity services.
       </h1>
-      </div>
 
-      <div className="relative">
+      <h1 className=" font-semibold text-2xl ">Over <span className=" text-orange-400   underline text-xl md:text-3xl">150,000+ client</span> all over the world.</h1>
+      
+      
+      </div>
+      <div className="   absolute left-10 -bottom-10  px-6 py-5 z-10 rounded-lg">
+      <img
+      className="floating-left-right-image "
+      src="https://jano.symphonythemes.net/sites/jano/files/images/shape/shape_08.svg"
+      alt="bbb"
+    />
+</div>
+
+      <div className="relative ">
   <div>
     <img
       className="absolute w-[15%] top-28 floating-image md:top-36"
@@ -295,13 +314,13 @@ const App = () => {
 
   <div>
     <img
-      className="absolute w-[3%] top-72 floating-image lg:top-96 md:top-72"
+      className="absolute w-[3%] top-64 floating-image lg:top-96 md:top-80"
       src="https://jano.symphonythemes.net/sites/jano/files/images/shape/shape_03.svg"
       alt="bbb"
     />
   </div>
 
-  <div className="relative w-[88%] mx-auto">
+  <div className="relative w-[88%]  mx-auto">
     {/* Background image */}
     <div
       className="absolute inset-0  top-32 md:top-40 lg:top-56  w-[80%] mx-auto bg-center bg-cover"
@@ -309,7 +328,7 @@ const App = () => {
     ></div>
 
     {/* Foreground image */}
-    <img className="relative w-full" src={bb} alt="bbb" />
+    <img className="relative    w-full" src={bb} alt="bbb" />
   </div>
 
   <div>
@@ -340,8 +359,23 @@ const App = () => {
       alt="bbb"
     />
   </div>
+  <div className="  bg-white shadow-md absolute right-0 -bottom-10 z-20 px-6 py-4 rounded-lg">
+ <div className=" flex  gap-4">
+ <div className=" ">
+    <h1 className="bg-purple-600 p-2  rounded-full"><IoCheckmark size={36} color="white"  /></h1>
+  </div>
 
+  <div>
+  <h1>Save up to 50% in <br/> Yearly plan.</h1>
+  <h1 className=" text-gray-400 font-serif mt-4">LEARN MORE</h1>
+  </div>
+ </div>
 </div>
+ 
+</div>
+
+
+
 
     </div>
    
