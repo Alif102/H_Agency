@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.floating-image {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateY(-0.2in); /* Moves up by 1 inch */
+    }
+  }
+  
