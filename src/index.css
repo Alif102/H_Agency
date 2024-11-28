@@ -4,7 +4,7 @@
 
 
 .floating-image {
-    display: inline-block;
+    /* display: inline-block; */
     animation: float 5s ease-in-out infinite;
   }
   
@@ -16,10 +16,45 @@
       transform: translateY(-0.2in); /* Moves up by 1 inch */
     }
   }
+  .circle-container {
+    position: relative;
+    width: 200px; /* Diameter of the circular path */
+    height: 200px;
+    border-radius: 50%; /* Makes the container a perfect circle */
+  }
+  
+  .circle-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 150px; /* Adjust to your image size */
+    height: 150px;
+    border-radius: 50%; /* Optional: Makes the image itself circular */
+    animation: run-circle 15s linear infinite;
+  }
+  
+  @keyframes run-circle {
+    0% {
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(-50%, 0) rotate(90deg);
+    }
+    50% {
+      transform: translate(-50%, 0) rotate(180deg);
+    }
+    75% {
+      transform: translate(-50%, 0) rotate(270deg);
+    }
+    100% {
+      transform: translate(-50%, 0) rotate(360deg);
+    }
+  }
   
 
   .floating-left-right-image {
-    display: inline-block;
+    /* display: inline-block; */
     animation: float-right-left 5s ease-in-out infinite;
   }
   

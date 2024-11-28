@@ -99,8 +99,8 @@ const ClientSay = () => {
     //   backgroundPosition: "center",
     // }} 
     className="p-4 bg-sky-100">
-      <div className="flex flex-col md:flex-row justify-between gap-5 px-4 items-center mt-10 mb-10 md:mb-28">
-        <h1 className="md:text-5xl text-2xl font-bold">
+      <div className="flex flex-col md:flex-row justify-evenly gap-5 px-4 items-center mt-10 mb-10 md:mb-28">
+        <h1 className="md:text-5xl text-3xl font-bold">
           What’s Our Client Say <br /> About Us.
         </h1>
         <div className="flex  gap-3">

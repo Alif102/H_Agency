@@ -9,6 +9,9 @@ import About from "./Component/About/About/About";
 import { Link } from "react-router-dom";
 import WhyChooseUs from "./Component/WhyChooseUs/WhyChooseUs";
 import ClientSay from "./Component/ClientSay/CliemtSay/ClientSay";
+import HappyWork from "./Component/HappyWork/HappyWork";
+import Contact from "./Component/Contact/Contact";
+import Pricing from "./Component/Pricing/Pricing";
 const App = () => {
   const [scrolled, setScrolled] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -393,9 +396,18 @@ const App = () => {
     <div>
       <WhyChooseUs/>
     </div>
+    <div>
+      <Pricing/>
+    </div>
 
     <div>
       <ClientSay/>
+    </div>
+    <div>
+      <HappyWork/>
+    </div>
+    <div>
+      <Contact/>
     </div>
    </div>
   );
