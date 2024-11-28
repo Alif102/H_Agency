@@ -5,7 +5,7 @@
 
 .floating-image {
     display: inline-block;
-    animation: float 3s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
   }
   
   @keyframes float {
@@ -20,7 +20,7 @@
 
   .floating-left-right-image {
     display: inline-block;
-    animation: float-right-left 3s ease-in-out infinite;
+    animation: float-right-left 5s ease-in-out infinite;
   }
   
   @keyframes float-right-left {
@@ -31,4 +31,37 @@
       transform: translateX(0.5in); /* Moves right by 0.5 inches */
     }
   }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spin-image {
+  
+    animation: spin 15s linear infinite; /* Spin continuously */
+  }
+
+  .custom-bg-blue{
+    background-color: rgb(73 87 158);
+  }
+  
+ .pollinator {
+    font-family: 'Pollinator';
+    src: url('/public/font/pollinator.otf') format('truetype');
+  
+    font-style: normal;
+  }
+
+  @layer utilities {
+    .shadow-inner-bottom {
+      box-shadow: inset 0 -14px 26px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+
   
