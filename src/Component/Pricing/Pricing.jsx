@@ -62,7 +62,7 @@ const Pricing = () => {
           <h1 className="my-5  text-4xl font-bold pollinator">No hidden charges, Choose your plan.</h1>
 
          <div className=" absolute floating-left-right-image -top-7 left-0">
-         <img src={p1} alt="ghrh"  />
+         <img className="w-16 mt-6 md:mt-0 md:w-full" src={p1} alt="ghrh"  />
          </div>
          
         </div>

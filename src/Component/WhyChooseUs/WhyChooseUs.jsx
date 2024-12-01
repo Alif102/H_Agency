@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   return (
     <div>
 
-        <div className=' bg-sky-100 flex flex-col md:flex-col lg:flex-row gap-6 p-20 items-center justify-center md:justify-evenly'>
+        <div className=' bg-sky-100 flex flex-col md:flex-col lg:flex-row gap-6 p-10 items-center justify-center md:justify-evenly'>
 
             <div className=' text-center md:text-start'>
                 <h1 className=' text-gray-400 mb-1 font-semibold uppercase'>Why Us ?</h1>
@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
             </div>
  
 
-            <div className=' grid md:grid-cols-4 grid-cols-1 gap-7 '>
+            <div className=' grid md:grid-cols-4 grid-cols-1 w-full md:w-auto gap-7 '>
                <div className=' col-span-1   md:col-span-2 bg-white rounded-xl shadow-sm p-5 space-y-6'>
                 <IoDiamond size={30} color='orange' />
                 <h1 className='text-xl md:text-3xl font-bold '>Quality Service</h1>

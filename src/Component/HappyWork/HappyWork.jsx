@@ -10,10 +10,12 @@ import v5 from '../../assets/v5.png'
 const HappyWork = () => {
   return (
    <div className=" bg-sky-100 p-8">
-    <img src={v2} className=" floating-left-right-image w-28" alt="fhbfhb"  />
-    <img src={v5} className=" w-28 ml-auto " alt="fhbfhb"  />
+   <div className=" flex justify-between">
+   <img src={v2} className=" floating-left-right-image md:w-28 w-20" alt="fhbfhb"  />
+   <img src={v5} className=" md:w-28 w-20 ml-auto " alt="fhbfhb"  />
+   </div>
 
-     <div className="mt-20 mb-40   md:mb-20">
+     <div className="md:mt-20 mt-5 mb-40   md:mb-20">
       <div className="flex flex-row relative gap-6 md:w-[79%] lg:w-[80%] w-[100%] p-4 md:p-0  mx-auto">
         <div className=" border-4 border-gray-500 z-20  p-16 w-full">
           <h1 className="text-2xl font-bold text-center">

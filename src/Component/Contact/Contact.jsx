@@ -6,7 +6,8 @@ import tick from '../../assets/tick.png'
 import sv2 from '../../assets/sv2.png'
 const Contact = () => {
   return (
-    <div className=' relative mt-20 mb-16 flex md:flex-row flex-col gap-40 md:gap-16 bg-gray-100 md:p-28 p-20 justify-evenly my-10'>
+    <div className=' relative  mb-6 flex md:flex-row flex-col gap-40 md:gap-16 bg-gray-100 md:p-28 p-10 justify-evenly'>
+    
       <div className=' space-y-5 '>
         <h1>
             <TfiHeadphoneAlt size={36} color='skyblue' />
@@ -26,7 +27,7 @@ const Contact = () => {
 
       
 
-      <div className=' space-y-5 z-10 relative bg-white p-10 rounded-xl '>
+      <div className=' space-y-5 z-10 relative bg-white w-full p-10 rounded-xl '>
      
       <h1>
   <input
@@ -74,13 +75,14 @@ form</h1>
 
       
 
-      <div className=' absolute right-0 -top-12'>
-      <img src={s1} className=' w-28 h-28' alt="ssss"  />
-
-      </div>
+     
       
 
       <div className=' bg-blue-600 absolute -top-4 left-20 rounded-full w-7 h-7'>
+
+      </div>
+      <div className=' absolute  -top-16 right-2 '>
+      <img src={s1} className=' w-28 ' alt="ssss"  />
 
       </div>
 

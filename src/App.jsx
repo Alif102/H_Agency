@@ -403,12 +403,14 @@ const App = () => {
     <div>
       <ClientSay/>
     </div>
-    <div>
+   <div>
+   <div className=" bg-sky-100">
       <HappyWork/>
     </div>
     <div>
       <Contact/>
     </div>
+   </div>
    </div>
   );
 };

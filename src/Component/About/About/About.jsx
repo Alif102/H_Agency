@@ -4,7 +4,7 @@ import { IoCheckmark } from 'react-icons/io5'
 const About = () => {
   return (
     <div className=' w-[80%]   mt-28 mb-20 mx-auto grid md:grid-cols-12 grid-cols-1 items-center  gap-16 '>
-        <div className='col-span-5   '>
+        <div className='md:col-span-5 col-span-1   '>
       
 
 
@@ -41,7 +41,7 @@ const About = () => {
       {/* <div className=' col-span-2'>
 
       </div> */}
-      <div className=' col-span-6  space-y-6 mt-10 '>
+      <div className=' col-span-1 md:col-span-6  space-y-6 mt-3 md:mt-10 '>
         <h1 className=' text-gray-400 text-xl font-sans'>ABOUT US</h1>
         <h1 className="font-bold text-5xl">
   Your Comfort is Our{" "}
